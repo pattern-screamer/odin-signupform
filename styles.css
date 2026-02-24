@@ -11,12 +11,20 @@
 :root {
   --title-bg-color: #0005;
   --text-color-white: #fff;
+
+  --overcast-bg-color: #f5f5f5;
+  --registration-bg-color: #fff;
+
+  --leaf-tone: #596D48;
 }
 
 .wrapper {
   position: relative;
 
   display: flex;
+  height: 100vh;
+
+  font-size: 1.25rem;
 }
 
 .bg-image {
@@ -24,6 +32,8 @@
   left: 0;
   top: 0;
   z-index: -20;
+
+  height: 100vh;
 }
 
 .left {
@@ -31,26 +41,27 @@
   min-width: 370px;
   max-width: 600px;
 
+  color: var(--text-color-white);
+  text-align: center;
+
   display: flex;
   flex-direction: column;
-
-  color: var(--text-color-white);
+  justify-content: space-between;
 }
 
 .title {
   background-color: var(--title-bg-color);
   font-family: 'Norse', system-ui;
-  font-size: 8rem;
+  font-size: 7rem;
 
-  min-width: 340px;
+  height: 180px;
 
-  padding: 1rem 1rem 0;
-  text-align: center;
-  vertical-align: top;
+  padding-top: 0.5rem;
+  margin-top: 100px;
 }
 
 .title > span {
-  vertical-align: 1rem;
+  vertical-align: 2rem;
 }
 
 .title > .logo {
@@ -58,9 +69,42 @@
   height: 150px;
 }
 
+.subtitle {
+  justify-self: end;
+}
+
+.left a {
+  color: var(--text-color-white);
+}
+
 .right {
   flex: 60vw;
 
   display: flex;
   flex-direction: column;
+  font-size: 1.25em;
+}
+
+.motivation {
+  background-color: var(--overcast-bg-color);
+  padding: 2em;
+}
+
+.registration {
+  background-color: var(--registration-bg-color);
+  padding: 2em;
+}
+
+.create-account {
+  background-color: var(--overcast-bg-color);
+  padding: 2em;
+}
+
+.right input[type="submit"] {
+  background-color: var(--leaf-tone);
+  color: var(--text-color-white);
+}
+
+.right a {
+  color: var(--leaf-tone);
 }
