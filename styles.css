@@ -7,3 +7,60 @@
   font-style: normal;
   font-display: swap;
 }
+
+:root {
+  --title-bg-color: #0005;
+  --text-color-white: #fff;
+}
+
+.wrapper {
+  position: relative;
+
+  display: flex;
+}
+
+.bg-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -20;
+}
+
+.left {
+  flex: calc(40vw - 2em);
+  min-width: 370px;
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+
+  color: var(--text-color-white);
+}
+
+.title {
+  background-color: var(--title-bg-color);
+  font-family: 'Norse', system-ui;
+  font-size: 8rem;
+
+  min-width: 340px;
+
+  padding: 1rem 1rem 0;
+  text-align: center;
+  vertical-align: top;
+}
+
+.title > span {
+  vertical-align: 1rem;
+}
+
+.title > .logo {
+  display: inline-block;
+  height: 150px;
+}
+
+.right {
+  flex: 60vw;
+
+  display: flex;
+  flex-direction: column;
+}
