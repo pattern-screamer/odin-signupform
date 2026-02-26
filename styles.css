@@ -94,10 +94,22 @@
   z-index: 10;
 }
 
+.motivation > p {
+  width: calc(700px + 2rem);
+}
+
+.motivation > .sign-up-now {
+  margin-top: -1rem;
+}
+
 .registration {
   background-color: var(--registration-bg-color);
   box-shadow: 0 4px 5px #0004;
   z-index: 20;
+}
+
+.flex-form {
+  max-width: 700px;
 }
 
 .flex-form > form {
@@ -119,12 +131,16 @@ form > p > label {
 }
 
 form > p > input {
-  border: 1px solid #ccc;
+  border: 1px solid #e5e7eb;
   border-radius: 4px;
 }
 
 form > p > input:focus {
   box-shadow: 4px 4px 4px #0002;
+}
+
+form > p > input:invalid {
+  border-color: hsl(0, 90%, 70%);
 }
 
 .create-account {
