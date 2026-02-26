@@ -19,27 +19,18 @@
 }
 
 .wrapper {
-  position: relative;
-
   display: flex;
   height: 100vh;
 
   font-size: 1.25rem;
 }
 
-.bg-image {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -20;
-
-  height: 100vh;
-}
-
 .left {
-  flex: calc(40vw - 2em);
+  background-image: url("./assets/photo-1585202900225-6d3ac20a6962.avif");
+
+  flex: calc(40vw);
   min-width: 370px;
-  max-width: 600px;
+  max-width: 655px;
 
   color: var(--text-color-white);
   text-align: center;
@@ -67,10 +58,6 @@
 .title > .logo {
   display: inline-block;
   height: 150px;
-}
-
-.subtitle {
-  justify-self: end;
 }
 
 .left a {
