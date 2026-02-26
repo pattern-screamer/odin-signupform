@@ -121,6 +121,17 @@
   width: 240px;
 }
 
+.right input[type="submit"]:hover,
+.right input[type="submit"]:focus {
+  cursor: pointer;
+  background-color: hsl(92, 20%, 15%)
+}
+
+.right input[type="submit"]:active {
+  cursor: pointer;
+  background-color: hsl(192, 20%, 35%)
+}
+
 .right a {
   color: var(--leaf-tone);
 }
