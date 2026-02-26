@@ -73,6 +73,8 @@
 
   display: flex;
   flex-direction: column;
+
+  min-width: 700px;
 }
 
 .right > div {
@@ -96,6 +98,33 @@
   background-color: var(--registration-bg-color);
   box-shadow: 0 4px 5px #0004;
   z-index: 20;
+}
+
+.flex-form > form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.flex-form > form > p {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+}
+
+form > p > label {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+form > p > input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form > p > input:focus {
+  box-shadow: 4px 4px 4px #0002;
 }
 
 .create-account {
