@@ -12,7 +12,7 @@
   --title-bg-color: #0005;
   --text-color-white: #fff;
 
-  --overcast-bg-color: #f5f5f5;
+  --overcast-bg-color: hsl(240, 20%, 95%);
   --registration-bg-color: #fff;
 
   --leaf-tone: #596D48;
@@ -82,22 +82,29 @@
 
   display: flex;
   flex-direction: column;
-  font-size: 1.25em;
+}
+
+.right > div {
+  padding: 2em;
 }
 
 .motivation {
   background-color: var(--overcast-bg-color);
-  padding: 2em;
+  z-index: 10;
 }
 
 .registration {
   background-color: var(--registration-bg-color);
-  padding: 2em;
+  box-shadow: 0 4px 5px #0004;
+  z-index: 20;
 }
 
 .create-account {
   background-color: var(--overcast-bg-color);
-  padding: 2em;
+
+  flex: 1;
+
+  z-index: 10;
 }
 
 .right input[type="submit"] {
