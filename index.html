@@ -33,27 +33,27 @@
           <form id="reg" method="GET" action="#">
             <p>
               <label for="first_name">FIRST NAME</label>
-              <input type="text" id="first_name" name="first_name">
+              <input type="text" id="first_name" name="first_name" autocomplete="given-name">
             </p>
             <p>
               <label for="last_name">LAST NAME</label>
-              <input type="text" id="last_name" name="last_name">
+              <input type="text" id="last_name" name="last_name" autocomplete="family-name">
             </p>
             <p>
               <label for="email">EMAIL</label>
-              <input type="email" id="email" name="email">
+              <input type="email" id="email" name="email" autocomplete="email">
             </p>
             <p>
               <label for="phone">PHONE NUMBER</label>
-              <input type="tel" id="phone" name="phone">
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
             </p>
             <p>
               <label for="pwd">PASSWORD</label>
-              <input type="password" id="pwd" name="pwd" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[A-Z])(?=.*[a-z])[a-zA-Z0-9!@#$%^&*]{8,15}">
+              <input class="password-input" type="password" id="pwd" name="pwd" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[A-Z])(?=.*[a-z])[a-zA-Z0-9!@#$%^&*]{8,15}">
             </p>
             <p>
               <label for="last_name">CONFIRM PASSWORD</label>
-              <input type="password" id="pwd" name="pwd" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[A-Z])(?=.*[a-z])[a-zA-Z0-9!@#$%^&*]{8,15}">
+              <input class="confirm-password-input" type="password" id="confirm-pwd" name="pwd" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[A-Z])(?=.*[a-z])[a-zA-Z0-9!@#$%^&*]{8,15}">
             </p>
           </form>
         </div>
