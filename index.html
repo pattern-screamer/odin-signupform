@@ -38,7 +38,8 @@
               id="first_name" 
               name="first_name" 
               autocomplete="given-name"
-              pattern="([a-zA-Z]+)"
+              placeholder="Peter"
+              pattern="[a-zA-Z]+"
               required>
             </p>
             <p>
@@ -48,6 +49,8 @@
               id="last_name" 
               name="last_name" 
               autocomplete="family-name"
+              placeholder="Hankan"
+              pattern="[a-zA-Z]+"
               required>
             </p>
             <p>
@@ -57,6 +60,8 @@
               id="email" 
               name="email" 
               autocomplete="email"
+              placeholder="bisexual@rights.4life"
+              pattern=".+@.+\..+"
               required>
             </p>
             <p>
@@ -64,8 +69,9 @@
               <input 
               type="tel" 
               id="phone" 
-              name="phone" 
+              name="phone"
               autocomplete="tel"
+              placeholder="696 969 6969"
               required>
             </p>
             <p class="pass-field">
@@ -77,6 +83,7 @@
               name="pwd"
               pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[A-Z])(?=.*[a-z])[a-zA-Z0-9!@#$%^&*]{8,15}"
               autocomplete="new-password"
+              placeholder="Hover to see requirements"
               required
               >
             </p>
@@ -88,6 +95,7 @@
               name="pwd"
               pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[A-Z])(?=.*[a-z])[a-zA-Z0-9!@#$%^&*]{8,15}"
               autocomplete="new-password"
+              placeholder="Must match PASSWORD"
               required>
             </p>
             <ul class="pass-exp">

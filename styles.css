@@ -159,7 +159,8 @@ form>p>label {
   letter-spacing: 2px;
 }
 
-form>p>input {
+form>p>input,
+form>p>input:required {
   border: 1px solid #e5e7eb;
   border-radius: 4px;
 }
@@ -170,6 +171,11 @@ form>p>input:focus {
 
 form>p>input:invalid {
   border-color: hsl(0, 90%, 70%);
+}
+
+form>p>input:placeholder-shown {
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
 }
 
 .create-account {
