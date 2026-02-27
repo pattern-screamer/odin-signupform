@@ -10,21 +10,21 @@
 
 /* IMPORT ROBOTO FONT */
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
-        url('./fonts/Roboto-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
+    url('./fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Italic.woff2') format('woff2'),
-        url('./fonts/Roboto-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Italic.woff2') format('woff2'),
+    url('./fonts/Roboto-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 :root {
@@ -71,11 +71,11 @@
   margin-top: 100px;
 }
 
-.title > span {
+.title>span {
   vertical-align: 2rem;
 }
 
-.title > .logo {
+.title>.logo {
   display: inline-block;
   height: 150px;
 }
@@ -97,7 +97,7 @@
   min-width: 720px;
 }
 
-.right > div {
+.right>div {
   padding: 2em;
 }
 
@@ -116,11 +116,11 @@
   z-index: 10;
 }
 
-.motivation > p {
-  max-width:  700px;
+.motivation>p {
+  max-width: 700px;
 }
 
-.motivation > .sign-up-now {
+.motivation>.sign-up-now {
   margin-top: -1rem;
 }
 
@@ -135,39 +135,40 @@
 }
 
 .flex-form {
+  position: relative;
   max-width: 700px;
 }
 
-.flex-form > form {
+.flex-form>form {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1rem;
 }
 
-.flex-form > form > p {
+.flex-form>form>p {
   display: flex;
   flex-direction: column;
   margin-right: 3rem;
 }
 
-form > p > label {
+form>p>label {
   color: #444;
   font-size: 0.625em;
   font-weight: 600;
   letter-spacing: 2px;
 }
 
-form > p > input {
+form>p>input {
   border: 1px solid #e5e7eb;
   border-radius: 4px;
 }
 
-form > p > input:focus {
+form>p>input:focus {
   box-shadow: 4px 4px 4px #0002;
 }
 
-form > p > input:invalid {
+form>p>input:invalid {
   border-color: hsl(0, 90%, 70%);
 }
 
@@ -190,7 +191,7 @@ form > p > input:invalid {
   border-radius: 8px;
   box-shadow: 4px 4px 4px #0002;
   padding: 0.6rem;
-  
+
   font-weight: bold;
 
   width: 240px;
@@ -205,6 +206,23 @@ form > p > input:invalid {
 .right input[type="submit"]:active {
   cursor: pointer;
   background-color: hsl(192, 20%, 35%)
+}
+
+.pass-exp {
+  position: absolute;
+  bottom: -190px;
+  left: -10px;
+
+  display: none;
+  color: var(--text-color-white);
+  background-color: #000d;
+}
+
+.pass-field:hover ~ .pass-exp,
+.pass-field:focus ~ .pass-exp,
+.pass-field:active ~ .pass-exp
+ {
+  display: block;
 }
 
 .right a {
