@@ -8,6 +8,25 @@
   font-display: swap;
 }
 
+/* IMPORT ROBOTO FONT */
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
+        url('./fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Italic.woff2') format('woff2'),
+        url('./fonts/Roboto-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
 :root {
   --title-bg-color: #0005;
   --text-color-white: #fff;
@@ -22,6 +41,7 @@
   display: flex;
   height: 100vh;
 
+  font-family: 'Roboto', system-ui;
   font-size: 1.25rem;
 }
 
@@ -74,7 +94,7 @@
   display: flex;
   flex-direction: column;
 
-  min-width: 700px;
+  min-width: 720px;
 }
 
 .right > div {
@@ -91,11 +111,13 @@
 
   flex: 1;
 
+  font-weight: bold;
+
   z-index: 10;
 }
 
 .motivation > p {
-  width: calc(700px + 2rem);
+  max-width:  700px;
 }
 
 .motivation > .sign-up-now {
@@ -106,6 +128,10 @@
   background-color: var(--registration-bg-color);
   box-shadow: 0 4px 5px #0004;
   z-index: 20;
+}
+
+.imperative {
+  font-weight: 600;
 }
 
 .flex-form {
@@ -126,8 +152,10 @@
 }
 
 form > p > label {
-  font-size: 0.8rem;
-  font-weight: bold;
+  color: #444;
+  font-size: 0.625em;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 form > p > input {
@@ -162,6 +190,8 @@ form > p > input:invalid {
   border-radius: 8px;
   box-shadow: 4px 4px 4px #0002;
   padding: 0.6rem;
+  
+  font-weight: bold;
 
   width: 240px;
 }
